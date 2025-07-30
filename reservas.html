@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domínio Pub</title>
+    <link rel="icon" type="image/x-icon" href="../Projeto/Imagens/favicon.png">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+    <nav class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="../Projeto/Imagens/icon-logo.png" alt="Domínio Público Logo"></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="reservas.html" class="active">Reservas</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
+    </nav>
+
+    <main class="text-container">
+      <h1>Faça sua Reserva</h1>
+      <p>Reserve já sua mesa para garantir que ninguém fique de fora! <br> Registre seus momentos conosco</p>
+    
+    <section class="form-section">
+      
+      <form id="contact-form" data-aos="fade-in">
+        <img src="../Projeto/Imagens/calendar.png" alt="Ícone calendário" class="form-icon" />
+  
+        <div class="form-grid">
+          <div class="input-group">
+            <input type="text" name="name1" placeholder="Seu nome" required />
+            <label for="name1">Nome</label>
+          </div>
+
+          <div class="input-group">
+            <input type="text" name="name2" placeholder="Seu e-mail" required />
+            <label for="name2">E-mail</label>
+          </div>
+
+          <div class="input-group">
+            <input type="tel" name="name3" placeholder="Seu telefone" required />
+            <label for="name3">Telefone</label>
+          </div>
+
+          <div class="input-group">
+            <input type="text" name="name4" placeholder="@ do instagram" required />
+            <label for="name4">Instagram</label>
+          </div>
+
+          <div class="input-group">
+            <input type="date" name="name5" required />
+            <label for="name5">Data da Reserva</label>
+          </div>
+
+          <div class="input-group">
+            <input type="number" name="name6" placeholder="Ex: 10" required />
+            <label for="name6">Qtd de Pessoas</label>
+          </div>
+
+        </div>
+  
+        <div class="input-group full-width">
+          <textarea name="message" placeholder="Digite sua mensagem aqui" required></textarea>
+          <label for="message">Mensagem</label>
+        </div>
+  
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content" data-aos="fade-up">
+        <div class="footer-info">
+          <h3>Horário de Funcionamento:</h3>
+          <p>Quarta à Domingo - À partir das 18h</p>
+          
+          <div class="contact">
+            <h3>Fale conosco:</h3>
+            <div class="social-icons">
+              <div class="icon-placeholder"><a href="mailto:dominiopubbar@gmail.com"><img src="../Projeto/Imagens/mail.png" alt="E-mail"></a></div>
+              <div class="icon-placeholder"><a href="https://www.instagram.com/dominiopub/" rel="external"><img src="../Projeto/Imagens/instagram-icon.png" alt="Instagram"></a></div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="footer-location">
+          <div class="footer-map">
+              <div class="icon-map"><img src="../Projeto/Imagens/map-pin.png" alt="Local"></div>
+              <h3>Localização</h3>
+          </div>
+          
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7972.0142443897075!2d-44.247159!3d-2.504531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f69326b4e34d85%3A0xff6f43435434fce5!2zRG9tw61uaW8gUMO6YmxpY28gQmFy!5e0!3m2!1spt-BR!2sbr!4v1730332801945!5m2!1spt-BR!2sbr" 
+            width="300" 
+            height="200" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+          <p class="endereco">Av Beta, Quadra 19, Número 4, Parque Athenas - São Luís, MA</p>
+            
+        </div>
+      </div>
+  
+      <div class="footer-bottom">
+        <div class="logo-placeholder"><img src="../Projeto/Imagens/favicon.png" alt="Logo"></div>
+        <p>Copyright © 2025 Domínio Pub</p>
+        <p>Todos os direitos reservados. Todas as marcas registradas são propriedade dos seus respectivos donos.</p>
+      </div>
+    </footer>
+
+    <script src="../Projeto/script/reservas.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,     
+      });
+    </script>
+
+    <script>
+      const toggle = document.getElementById('menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+    
+      toggle.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    </script>
+</body>
+</html>
